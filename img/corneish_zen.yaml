@@ -192,9 +192,6 @@ combos:
 - p: [1, 13]
   k: {h: '1', s: '$$mdi:bluetooth-connect$$'}
   l: [Fn]
-- p: [2, 14]
-  k: {h: '2', s: '$$mdi:bluetooth-connect$$'}
-  l: [Fn]
 - p: [3, 15]
   k: {h: '3', s: '$$mdi:bluetooth-connect$$'}
   l: [Fn]
