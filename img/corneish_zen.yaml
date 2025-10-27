@@ -40,7 +40,7 @@ layers:
   - {t: '$$mdi:apple-keyboard-command$$', h: '$$mdi:keyboard-return$$'}
   - $$mdi:apple-keyboard-shift$$
   - {t: '$$mdi:keyboard-return$$', h: '$$mdi:gesture-tap-hold$$', s: '$$mdi:alpha-w-box$$'}
-  - {t: Fn, h: '&enter_l'}
+  - {t: '&space_l 3', h: L1}
   - {t: '$$mdi:apple-keyboard-shift$$', h: '$$mdi:gesture-tap-hold$$', s: '$$mdi:alpha-w-box$$'}
   - {t: '`', s: '~'}
   L2:
@@ -169,7 +169,7 @@ layers:
   - $$mdi:brightness-7$$
   - $$mdi:brightness-5$$
   - {t: '$$mdi:close-box$$', h: L2}
-  - {t: '$$mdi:close-box$$', h: L2, type: held}
+  - {t: '$$mdi:close-box$$', h: L2}
   - $$mdi:apple-keyboard-caps$$
   - {t: '$$mdi:transfer$$', type: trans}
 combos:

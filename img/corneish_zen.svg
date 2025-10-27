@@ -677,10 +677,12 @@ path.combo {
 </g>
 <g transform="translate(698, 320) rotate(-30.0)" class="key keypos-39">
 <rect rx="4" ry="4" x="-38" y="-58" width="77" height="117" class="key"/>
-<a href="#Fn">
-<text x="0" y="0" class="key tap layer-activator">Fn</text>
-</a><text x="0" y="54" class="key hold"><tspan style="font-size: 62%">&amp;enter_l</tspan></text>
-</g>
+<text x="0" y="0" class="key tap">
+<tspan x="0" dy="-0.75em" style="font-size: 62%">&amp;space_l</tspan><tspan x="0" dy="1.0em" style="font-size: 62%">3</tspan>
+</text>
+<a href="#L1">
+<text x="0" y="54" class="key hold layer-activator">L1</text>
+</a></g>
 <g transform="translate(792, 304) rotate(-15.0)" class="key keypos-40">
 <rect rx="4" ry="4" x="-38" y="-38" width="77" height="77" class="key"/>
 <use href="#mdi:apple-keyboard-shift" xlink:href="#mdi:apple-keyboard-shift" x="-11" y="-11" height="22" width="22.0" class="key tap glyph mdi:apple-keyboard-shift"/>
@@ -1280,11 +1282,11 @@ path.combo {
 <a href="#L2">
 <text x="0" y="54" class="key hold layer-activator">L2</text>
 </a></g>
-<g transform="translate(698, 320) rotate(-30.0)" class="key held keypos-39">
-<rect rx="4" ry="4" x="-38" y="-58" width="77" height="117" class="key held"/>
-<use href="#mdi:close-box" xlink:href="#mdi:close-box" x="-11" y="-11" height="22" width="22.0" class="key held tap glyph mdi:close-box"/>
+<g transform="translate(698, 320) rotate(-30.0)" class="key keypos-39">
+<rect rx="4" ry="4" x="-38" y="-58" width="77" height="117" class="key"/>
+<use href="#mdi:close-box" xlink:href="#mdi:close-box" x="-11" y="-11" height="22" width="22.0" class="key tap glyph mdi:close-box"/>
 <a href="#L2">
-<text x="0" y="54" class="key held hold layer-activator">L2</text>
+<text x="0" y="54" class="key hold layer-activator">L2</text>
 </a></g>
 <g transform="translate(792, 304) rotate(-15.0)" class="key keypos-40">
 <rect rx="4" ry="4" x="-38" y="-38" width="77" height="77" class="key"/>
