@@ -96,7 +96,7 @@
     /omit-if-no-ref/ num_dance: num_dance {
       compatible = "zmk,behavior-tap-dance";
       tapping-term-ms = <TAPPING_TERM_MS>;
-      bindings = <&space_l>, <&num_word L2>;
+      bindings = <&kp SPACE>, <&num_word L2>;
       #binding-cells = <0>;
     };
     /omit-if-no-ref/ smart_enter: smart_enter {
