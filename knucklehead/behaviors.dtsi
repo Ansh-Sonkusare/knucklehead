@@ -108,8 +108,7 @@
       bindings = <&mo>, <&kp>;
       #binding-cells = <2>;
     };
-
-    /omit-if-no-ref/ smart_space: smart_space {
+      /omit-if-no-ref/ smart_space: smart_space {
       compatible = "zmk,behavior-hold-tap";
       flavor = "balanced";
       tapping-term-ms = <TAPPING_TERM_MS>;
@@ -118,6 +117,8 @@
       bindings = <&mo>, <&kp>;
       #binding-cells = <2>;
     };
+
+   
 
 
     /*
