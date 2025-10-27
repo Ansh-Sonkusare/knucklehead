@@ -99,11 +99,13 @@
       bindings = <&space_l>, <&num_word L2>;
       #binding-cells = <0>;
     };
-     /omit-if-no-ref/ smart_enter: smart_enter {
+    /omit-if-no-ref/ smart_enter: smart_enter {
       compatible = "zmk,behavior-hold-tap";
       flavor = "balanced";
       tapping-term-ms = <TAPPING_TERM_MS>;
-      bindings = <&mo>, <&enter_l>;
+      quick-tap-ms = <QUICK_TAP_MS>;
+      require-prior-idle-ms = <REQUIRE_PRIOR_IDLE_MS>;
+      bindings = <&mo>, <&kp>;
       #binding-cells = <2>;
     };
 
@@ -111,22 +113,10 @@
       compatible = "zmk,behavior-hold-tap";
       flavor = "balanced";
       tapping-term-ms = <TAPPING_TERM_MS>;
-      bindings = <&mo>, <&space_l>;
+      quick-tap-ms = <QUICK_TAP_MS>;
+      require-prior-idle-ms = <REQUIRE_PRIOR_IDLE_MS>;
+      bindings = <&mo>, <&kp>;
       #binding-cells = <2>;
-    };
-    
-    /omit-if-no-ref/ space_l: space_layer2 {
-      compatible = "zmk,behavior-tap-dance";
-      tapping-term-ms = <TAPPING_TERM_MS>;
-      bindings = <&kp SPACE>, <&num_word L2>;
-      #binding-cells = <0>;
-    };
-
-    /omit-if-no-ref/ enter_l: enter_layer3 {
-      compatible = "zmk,behavior-tap-dance";
-      tapping-term-ms = <TAPPING_TERM_MS>;
-      bindings = <&kp ENTER>, <&num_word L3>;
-      #binding-cells = <0>;
     };
 
 
