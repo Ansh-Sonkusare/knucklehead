@@ -118,7 +118,22 @@
       #binding-cells = <2>;
     };
 
-   
+          ent_shft: enter_shift {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            flavor = "tap-preferred";
+            tapping-term-ms = <200>;
+            quick-tap-ms = <175>;
+            bindings = <&kp>, <&kp>;
+        };
+        
+        // Tap dance: double-tap for Caps Lock
+        td_ent: tap_dance_enter {
+            compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&ent_shft LSHFT ENTER>, <&kp CAPS>;
+        };
 
 
     /*
