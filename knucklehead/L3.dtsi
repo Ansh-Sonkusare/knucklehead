@@ -1,26 +1,26 @@
 /**
- * Alpha Layer - QWERTY
+ * Numeric, Navigation and Media Controls Layer
  */
 
 / {
   keymap {
     compatible = "zmk,keymap";
 
-    qwerty_layer {
-      display-name = "L1";
+    layer_2 {
+      display-name = "L3";
       bindings = <
 // ╭───────────────┬───────────────┬───────────────┬───────────────┬───────────────┬───────────────╮   ╭───────────────┬───────────────┬───────────────┬───────────────┬───────────────┬───────────────╮
 // │0              │1              │2              │3              │4              │5              │   │6              │7              │8              │9              │10             │11             │
-    &kp TAB         &kp Q           &kp W           &kp E           &kp R           &kp T               &kp Y           &kp U           &kp I           &kp O           &kp P           &kp K_CANCEL
+    &kp GRAVE       &kp EXCL          &kp AT        &kp HASH        &kp LPAR        &kp RPAR            &kp LPAR        &kp RPAR        &kp PLUS        &kp MINUS       &kp PIPE      &trans
 // ├───────────────├───────────────┼───────────────┼───────────────┼───────────────┼───────────────┤   ├───────────────├───────────────┼───────────────┼───────────────┼───────────────┼───────────────┤
 // │12             │13             │14             │15             │16             │17             │   │18             │19             │20             │21             │22             │23             │
-    &kp ESC         &kp A           &hrml LCTRL S   &hrml LALT D    &hrml LCMD F    &hrml MEH G         &hrmr MEH H     &hrmr LCMD J    &hrmr LALT K    &hrmr LCTRL L   &kp SQT         &bkspc_del
+    &kp TILDE       &kp DLLR        &hrml LCTRL PRCNT &hrml LALT CARET &hrml LCMD LBKT &hrml MEH RBKT   &hrmr LCMD LBKT &hrmr MEH RBKT  &hrmr LALT FSLH &hrmr LCTRL BSLH &kp QMARK         &trans
 // ├───────────────├───────────────┼───────────────┼───────────────┼───────────────┼───────────────┤   ├───────────────├───────────────┼───────────────┼───────────────┼───────────────┼───────────────┤
 // │24             │25             │26             │27             │28             │29             │   │30             │31             │32             │33             │34             │35             │
-    &csl Fn         &kp Z           &kp X           &kp C           &kp V           &kp B               &kp N           &kp M           &kp COMMA       &kp DOT         &kp SEMICOLON   &csl Fn
+    &trans          &trans          &trans          &trans          &kp LBRC        &kp RBRC            &kp LBRC        &kp RBRC        &kp LT          &kp GT          &trans          &trans
 // ╰───────────────┴───────────────┴───────────────┼───────────────┼───────────────┼───────────────┤   ├───────────────├───────────────┼───────────────┼───────────────┴───────────────┴───────────────╯
 //                                                 │36             │37             │38             │   │39             │40             │41             │
-                                                    &mt ENTER LCMD  &kp LSHFT       &smart_enter L2 0   &smart_space L3 0 &smart_shift    &kp GRAVE
+                                                    &trans          &trans          &cmo L2             &cmo L3         &trans          &trans
 //                                                 ╰───────────────┴───────────────┴───────────────╯   ╰───────────────┴───────────────┴───────────────╯
       >;
     };

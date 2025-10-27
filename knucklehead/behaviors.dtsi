@@ -96,9 +96,38 @@
     /omit-if-no-ref/ num_dance: num_dance {
       compatible = "zmk,behavior-tap-dance";
       tapping-term-ms = <TAPPING_TERM_MS>;
-      bindings = <&sl L2>, <&num_word L2>;
+      bindings = <&space_l>, <&num_word L2>;
       #binding-cells = <0>;
     };
+     /omit-if-no-ref/ smart_enter: smart_enter {
+      compatible = "zmk,behavior-hold-tap";
+      flavor = "balanced";
+      tapping-term-ms = <TAPPING_TERM_MS>;
+      bindings = <&mo>, <&space_l>;
+      #binding-cells = <2>;
+    };  
+
+    /omit-if-no-ref/ smart_space: smart_space {
+      compatible = "zmk,behavior-hold-tap";
+      flavor = "balanced";
+      tapping-term-ms = <TAPPING_TERM_MS>;
+      bindings = <&mo>, <&enter_l>;
+      #binding-cells = <2>;
+    };
+    
+    /omit-if-no-ref/ space_l: space_layer2 {
+      compatible = "zmk,behavior-tap-dance";
+      tapping-term-ms = <TAPPING_TERM_MS>;
+      bindings = <&kb SPACE>, <&num_word L2>;
+      #binding-cells = <0>;
+    };
+/omit-if-no-ref/ enter_l: enter_layer3 {
+      compatible = "zmk,behavior-tap-dance";
+      tapping-term-ms = <TAPPING_TERM_MS>;
+      bindings = <&kb ENTER>, <&num_word L3>;
+      #binding-cells = <0>;
+    };
+
 
     /*
     - tap: backspace
