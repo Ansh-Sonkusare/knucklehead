@@ -58,35 +58,19 @@
       #binding-cells = <2>;
     };
 
-/*
- * - tap: Enter
- * - hold: Shift
- * - double-tap: Caps Word
- */
+    /*
+    - tap: sticky shift
+    - double-tap: caps-word (shift + tap mod-morph)
+    - hold: shift
 
-/*
- * - tap: Enter
- * - hold: Shift
- * - double-tap: Caps Word
- */
-enter_shift_ht: enter_shift_ht {
-  compatible = "zmk,behavior-hold-tap";
-  label = "EnterShiftHT";
-  flavor = "balanced";
-  tapping-term-ms = <200>;
-  bindings = <&kp>, <&kp>;
-  #binding-cells = <2>;
-};
-
-enter_shift_caps: enter_shift_caps {
-  compatible = "zmk,behavior-tap-dance";
-  label = "EnterShiftCaps";
-  tapping-term-ms = <250>;
-  bindings = <&enter_shift_ht RET LSFT>, <&caps_word>;
-  #binding-cells = <0>;
-};
-
-
+    From: https://github.com/urob/zmk-config/
+    */
+    /omit-if-no-ref/ smart_shift: smart_shift {
+      compatible = "zmk,behavior-mod-morph";
+      bindings = <&sk RSHFT>, <&caps_word>;
+      mods = <(MOD_RSFT)>;
+      #binding-cells = <0>;
+    };
 
 
     /*
