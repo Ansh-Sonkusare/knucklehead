@@ -132,7 +132,7 @@
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             tapping-term-ms = <TAPPING_TERM_MS>;
-            bindings = <&ent_shft LSHFT ENTER>, <&kp CAPS>;
+            bindings = <&ent_shft LSHFT SPACE>, <&kp CAPS>;
         };
 
 
