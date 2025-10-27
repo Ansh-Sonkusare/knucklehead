@@ -36,10 +36,9 @@
 /* #include "L1_colemak-dh.dtsi" */
 // #include "L1_colemak.dtsi"
 // #include "L1_dvorak.dtsi"
-#include "L1_qwerty.dtsi"
+#include "L1_qwerty.dtsi"  // Layer 0 (L1)
 
 // Other layers
-#include "L2.dtsi"
-#include "L3.dtsi"
-#include "Fn.dtsi"
-
+#include "L2.dtsi"          // Layer 1 (L2)
+#include "Fn.dtsi"          // Layer 2 (Fn) ← MOVE THIS UP
+#include "L3.dtsi"          // Layer 3 (L3) ← MOVE THIS DOWN
