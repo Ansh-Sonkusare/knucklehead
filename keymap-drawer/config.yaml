@@ -301,12 +301,23 @@ parse_config:
       align: top
     combo_to_3:
       align: top
-    combo_bt_clear:
-      align: top
-      offset: 0.03
     combo_mute:
       align: top
       offset: 0.15
+    combo_bt_clear:
+      align: top
+      offset: 0.03
+      layers: [Fn]
+    combo_bt_sel_0:
+      layers: [Fn]
+    combo_bt_sel_1:
+      layers: [Fn]
+    combo_bt_sel_2:
+      layers: [Fn]
+    combo_bt_sel_3:
+      layers: [Fn]
+    combo_bt_sel_4:
+      layers: [Fn]
     combo_minus:
       key:
         shifted: "_"
