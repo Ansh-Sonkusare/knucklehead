@@ -58,6 +58,12 @@
       #binding-cells = <2>;
     };
 
+/*
+ * - tap: Enter
+ * - hold: Shift
+ * - double-tap: Caps Word
+ */
+
 /omit-if-no-ref/ enter_shift_ht {
   compatible = "zmk,behavior-hold-tap";
   label = "EnterShiftHT";
@@ -66,13 +72,15 @@
   bindings = <&kp LSFT>, <&kp RET>;
   #binding-cells = <0>;
 };
+
 /omit-if-no-ref/ enter_shift_caps {
   compatible = "zmk,behavior-tap-dance";
   label = "EnterShiftCaps";
-  tapping-term-ms = <250>;     // controls double-tap detection window
+  tapping-term-ms = <250>;
   bindings = <&enter_shift_ht>, <&caps_word>;
   #binding-cells = <0>;
 };
+
 
 
     /*
