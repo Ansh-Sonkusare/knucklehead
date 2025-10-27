@@ -64,7 +64,13 @@
  * - double-tap: Caps Word
  */
 
-/omit-if-no-ref/ enter_shift_ht {
+/*
+ * - tap: Enter
+ * - hold: Shift
+ * - double-tap: Caps Word
+ */
+
+enter_shift_ht: enter_shift_ht {
   compatible = "zmk,behavior-hold-tap";
   label = "EnterShiftHT";
   flavor = "balanced";
@@ -73,13 +79,14 @@
   #binding-cells = <0>;
 };
 
-/omit-if-no-ref/ enter_shift_caps {
+enter_shift_caps: enter_shift_caps {
   compatible = "zmk,behavior-tap-dance";
   label = "EnterShiftCaps";
   tapping-term-ms = <250>;
   bindings = <&enter_shift_ht>, <&caps_word>;
   #binding-cells = <0>;
 };
+
 
 
 
