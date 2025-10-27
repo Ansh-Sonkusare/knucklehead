@@ -103,7 +103,7 @@
       compatible = "zmk,behavior-hold-tap";
       flavor = "balanced";
       tapping-term-ms = <TAPPING_TERM_MS>;
-      bindings = <&space_l>, <&mo>;
+      bindings = <&mo>, <&space_l>;
       #binding-cells = <2>;
     };
 
@@ -111,7 +111,7 @@
       compatible = "zmk,behavior-hold-tap";
       flavor = "balanced";
       tapping-term-ms = <TAPPING_TERM_MS>;
-      bindings = <&enter_l>, <&mo>;
+      bindings = <&mo>, <&enter_l>;
       #binding-cells = <2>;
     };
     
