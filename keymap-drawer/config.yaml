@@ -11,6 +11,14 @@ parse_config:
       shifted: $$mdi:alpha-w-box$$
       tap: L2
       hold: $$mdi:gesture-tap-hold$$
+    "&smart_enter L2 0":
+      shifted: $$mdi:alpha-w-box$$
+      tap: $$mdi:keyboard-return$$
+      hold: $$mdi:gesture-tap-hold$$
+    "&smart_space L3 0":
+      shifted: $$mdi:alpha-w-box$$
+      tap: $$mdi:keyboard-space$$
+      hold: $$mdi:gesture-tap-hold$$
     "&csl Fn":
       tap: Fn
       hold: $$mdi:close-box$$
@@ -23,6 +31,9 @@ parse_config:
     "&cmo L2":
       tap: $$mdi:close-box$$
       hold: L2
+    "&cmo L3":
+      tap: $$mdi:close-box$$
+      hold: L3
 
     # Modifiers
     "&caps_word": $$mdi:alpha-w-box$$
