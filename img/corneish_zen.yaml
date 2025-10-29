@@ -1,7 +1,7 @@
 layout: {zmk_keyboard: corneish_zen, layout_name: default_transform}
 layers:
   L1:
-  - $$mdi:keyboard-tab$$
+  - $$mdi:keyboard-esc$$
   - Q
   - W
   - E
@@ -13,13 +13,13 @@ layers:
   - O
   - P
   - $$mdi:close-box$$
-  - $$mdi:keyboard-esc$$
+  - $$mdi:keyboard-tab$$
   - A
   - {t: S, h: '$$mdi:apple-keyboard-control$$'}
   - {t: D, h: '$$mdi:apple-keyboard-option$$'}
   - {t: F, h: '$$mdi:apple-keyboard-command$$'}
-  - {t: G, h: '$$mdi:triangle$$'}
-  - {t: H, h: '$$mdi:triangle$$'}
+  - {t: G, h: Ctl+Alt+LGUI}
+  - {t: H, h: Ctl+Alt+LGUI}
   - {t: J, h: '$$mdi:apple-keyboard-command$$'}
   - {t: K, h: '$$mdi:apple-keyboard-option$$'}
   - {t: L, h: '$$mdi:apple-keyboard-control$$'}
@@ -42,7 +42,7 @@ layers:
   - {t: '$$mdi:keyboard-return$$', h: L2}
   - {t: '$$mdi:keyboard-return$$', h: L3}
   - {t: '$$mdi:keyboard-space$$', h: '$$mdi:apple-keyboard-shift$$'}
-  - {t: '`', s: '~'}
+  - {t: '$$mdi:backspace$$', s: '$$mdi:backspace-reverse-outline$$', type: backspace}
   L2:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '1', s: '!'}
@@ -61,8 +61,8 @@ layers:
   - {t: '7', h: '$$mdi:apple-keyboard-control$$', s: '&'}
   - {t: '8', h: '$$mdi:apple-keyboard-option$$', s: '*'}
   - {t: '9', h: '$$mdi:apple-keyboard-command$$', s: (}
-  - {t: '0', h: '$$mdi:triangle$$', s: )}
-  - {t: '$$mdi:arrow-left-bold$$', h: '$$mdi:triangle$$'}
+  - {t: '0', h: Ctl+Alt+LGUI, s: )}
+  - {t: '$$mdi:arrow-left-bold$$', h: Ctl+Alt+LGUI}
   - {t: '$$mdi:arrow-down-bold$$', h: '$$mdi:apple-keyboard-command$$'}
   - {t: '$$mdi:arrow-up-bold$$', h: '$$mdi:apple-keyboard-option$$'}
   - {t: '$$mdi:arrow-right-bold$$', h: '$$mdi:apple-keyboard-control$$'}
@@ -104,7 +104,7 @@ layers:
   - {t: F7, h: '$$mdi:apple-keyboard-control$$'}
   - {t: F8, h: '$$mdi:apple-keyboard-option$$'}
   - {t: F9, h: '$$mdi:apple-keyboard-command$$'}
-  - {t: F10, h: '$$mdi:triangle$$'}
+  - {t: F10, h: Ctl+Alt+LGUI}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -147,8 +147,8 @@ layers:
   - {t: '%', h: '$$mdi:apple-keyboard-control$$'}
   - {t: ^, h: '$$mdi:apple-keyboard-option$$'}
   - {t: '[', h: '$$mdi:apple-keyboard-command$$', s: '{'}
-  - {t: ']', h: '$$mdi:triangle$$', s: '}'}
-  - {t: '[', h: '$$mdi:triangle$$', s: '{'}
+  - {t: ']', h: Ctl+Alt+LGUI, s: '}'}
+  - {t: '[', h: Ctl+Alt+LGUI, s: '{'}
   - {t: ']', h: '$$mdi:apple-keyboard-command$$', s: '}'}
   - {t: /, h: '$$mdi:apple-keyboard-option$$', s: '?'}
   - {t: \, h: '$$mdi:apple-keyboard-control$$', s: '|'}
