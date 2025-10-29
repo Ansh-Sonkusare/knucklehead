@@ -12,8 +12,7 @@
 #define L3 3
 
 // Meh key
-#define MEH LS(LC(LALT))
-
+#define MEH LC(LA(LGUI))
 // Behaviors Constants
 #define TAPPING_TERM_MS 280
 #define QUICK_TAP_MS 175
