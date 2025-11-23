@@ -1,0 +1,29 @@
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
+From: Auto-generated patch
+Date: Mon, 01 Jan 2024 00:00:00 +0000
+Subject: [PATCH] Fix zmk_keymap_layer_activate call - add missing parameter
+
+In newer ZMK versions, zmk_keymap_layer_activate requires a second
+parameter for the activation type. This patch adds ZMK_LAYER_ACTIVATE
+as the second argument.
+
+---
+ src/behaviors/behavior_auto_layer.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/src/behaviors/behavior_auto_layer.c b/src/behaviors/behavior_auto_layer.c
+index 0000000..1111111 100644
+--- a/src/behaviors/behavior_auto_layer.c
++++ b/src/behaviors/behavior_auto_layer.c
+@@ -92,7 +92,7 @@ static int activate_auto_layer(const struct zmk_behavior_binding *binding,
+         return ZMK_BEHAVIOR_OPAQUE;
+     }
+ 
+-    zmk_keymap_layer_activate(auto_layer->layer);
++    zmk_keymap_layer_activate(auto_layer->layer, ZMK_LAYER_ACTIVATE);
+ 
+     return ZMK_BEHAVIOR_OPAQUE;
+ }
+-- 
+2.40.0
+
