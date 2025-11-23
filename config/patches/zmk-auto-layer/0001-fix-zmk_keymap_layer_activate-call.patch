@@ -20,7 +20,7 @@ index 0000000..1111111 100644
      }
  
 -    zmk_keymap_layer_activate(auto_layer->layer);
-+    zmk_keymap_layer_activate(auto_layer->layer, ZMK_LAYER_ACTIVATION_TYPE_ACTIVATE);
++    zmk_keymap_layer_activate(auto_layer->layer, 0);
  
      return ZMK_BEHAVIOR_OPAQUE;
  }
