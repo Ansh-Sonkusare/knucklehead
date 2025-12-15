@@ -20,7 +20,7 @@
     &csl Fn         &kp Z           &kp X           &kp C           &kp V           &kp B               &kp N           &kp M           &kp COMMA       &kp DOT         &kp SEMICOLON   &csl Fn
 // ╰───────────────┴───────────────┴───────────────┼───────────────┼───────────────┼───────────────┤   ├───────────────├───────────────┼───────────────┼───────────────┴───────────────┴───────────────╯
 //                                                 │36             │37             │38             │   │39             │40             │41             │
-                                                    &kp LCMD  &mt LSHFT SPACE  &smart_enter 1 ENTER   &smart_enter 3 ENTER &mt LSHFT SPACE    &bkspc_del 
+                                                        &kp LCMD  &mt LSHFT SPACE  &smart_enter 1 ENTER   &smart_enter 3 ENTER &mt LSHFT SPACE    &kp GRAVE
 //                                                 ╰───────────────┴───────────────┴───────────────╯   ╰───────────────┴───────────────┴───────────────╯
       >;
     };
